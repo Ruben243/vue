@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    @apply bg-gray-100 h-screen;
+  }
+
+  .header_h1 {
+    @apply font-black text-5xl text-center;
+  }
+
+  .contenedor {
+    @apply container mx-auto mt-4;
+  }
+
+  .formulario {
+    @apply mt-12 md:flex;
+  }
+
+  .formulario_template {
+    @apply md:w-1/2;
+  }
+
+  .formulario_h2 {
+    @apply font-black text-3xl text-center mb-5;
+  }
+
+  .formulario_p {
+    @apply text-lg mt-5 text-center mb-12
+  }
+
+  .formulario_form {
+    @apply bg-white shadow-md rounded-lg py-10 px-5 mb-20;
+  }
+
+  .campoForm {
+    @apply block text-gray-700 uppercase font-bold;
+  }
+
+  .inputForm {
+    @apply border-2 w-full p-2 mt-2 placeholder-indigo-400 rounded-md;
+  }
+
+  .textAreaForm {
+    @apply border-2 w-full mt-2 placeholder-indigo-400 rounded-md h-24;
+  }
+
+  .btnForm {
+    @apply bg-indigo-600 w-full p-3 text-white uppercase font-bold hover:bg-indigo-900 cursor-pointer transition-colors;
+  }
+
+  .alertaError {
+    @apply text-white text-center p-3 uppercase font-bold mb-3;
+  }
+}
